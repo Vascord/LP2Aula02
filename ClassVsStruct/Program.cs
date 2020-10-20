@@ -14,12 +14,17 @@ namespace ClassVsStruct
             Console.WriteLine("\tP2: Health = {0}, Armor={1}", p2.Health, 
                 p2.Armor);
 
-            p1.Armor = 0.0f; p1.Health = 0.5f;
+            DupHealth(p1);
 
             Console.WriteLine("\tP1: Health = {0}, Armor={1}", p1.Health, 
                 p1.Armor);
             Console.WriteLine("\tP2: Health = {0}, Armor={1}", p2.Health, 
                 p2.Armor);
+        }
+
+        private static DupHealth(Player p)
+        {
+            p.Health *=2;
         }
     }
 }
